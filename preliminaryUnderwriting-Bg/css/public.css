@@ -313,6 +313,43 @@ tbody tr td .operation .op_refuse{
 tbody tr td .operation .op_look{
     background-color: #1D84C6;
 }
+/* 详情页面的 表单 */
+.details{
+    width: 100%;
+}
+.details-item{
+    width: 100%;
+    margin: 20px 0px;
+}
+.details-item:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.details-item-l{
+    width: 10%;
+    float: left;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 15px;
+    line-height: 35px;
+}
+.details-item-r{
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    height: 35px;
+    padding: 0px 10px;
+    background-color:inherit;
+
+}
+.details-item-r-text{
+    height: 200px;
+    resize:none;
+    outline: none;
+    line-height: 35px;
+}
 /* 添加时的模态框 */
 .add_modal{
     z-index: 999;
