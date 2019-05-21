@@ -350,6 +350,31 @@ tbody tr td .operation .op_look{
     outline: none;
     line-height: 35px;
 }
+.details-result{
+    width: 100%;
+}
+.details-result:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.result{
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.result-yes{
+    background-color:#009688;
+    margin-left:10%; 
+}
+.result-no{
+    background-color:#FF5722;
+}
 /* 添加时的模态框 */
 .add_modal{
     z-index: 999;
