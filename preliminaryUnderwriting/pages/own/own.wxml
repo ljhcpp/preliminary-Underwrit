@@ -1,0 +1,28 @@
+<!--pages/own/own.wxml-->
+<view class='OneView' wx:for="{{List}}" wx:for-item="item" wx:key="index">
+    <view class='information'>
+        <view>
+            <text>姓名：</text>
+            <text>{{item.name}}</text>
+        </view>
+        <view>
+            <text>性别：</text>
+            <text wx:if="{{item.sex == 'male'}}">男</text>
+            <text wx:if="{{item.sex == 'female'}}">女</text>
+        </view>
+        <view>
+            <text>出生年月：</text>
+            <text>{{item.birthday}}</text>
+        </view>
+        <view>
+            <text>健康状况：</text>
+            <text>{{item.introduce}}</text>
+        </view>
+    </view>
+    <view class='operation'>
+        <view>
+            <text>Time : </text>
+            <text> {{item.submitTime}}</text>
+        </view>
+    </view>
+</view>
